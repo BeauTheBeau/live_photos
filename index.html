@@ -45,6 +45,7 @@
         background-repeat: no-repeat;
         z-index: -1;
         filter: blur(10px);
+        transition: transform 0.5s ease-out;
     }
 
     .title {
@@ -87,6 +88,21 @@
 <div class="background"
      style="background-image: url('https://images.unsplash.com/photo-1691465451955-462470475a25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDExfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60');"></div>
 
+<script>
+
+    const background = document.querySelector('.background');
+
+    // Move the background with the mouse
+    document.addEventListener('mousemove', (e) => {
+        const x = e.clientX / window.innerWidth;
+        const y = e.clientY / window.innerHeight;
+
+        background.style.transform = `translate(-${x * 10}px, -${y * 10}px`;
+        background.style.scale = `${1 + x / 20}`;
+        background.style.filter = `blur(${x * 2}px)`;
+    });
+
+</script>
 
 </body>
 </html>
