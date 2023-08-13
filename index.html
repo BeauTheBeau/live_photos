@@ -56,22 +56,36 @@
         color: transparent;
     }
 
+    .tag {
+        display: inline-block;
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+        padding: 0.1em 0.3em;
+        border-radius: 10em;
+        font-size: 0.8em;
+    }
+
 </style>
 
 <body>
 <main>
     <h1>Welcome to<br><span class="title">Live Photos</span></h1>
-    <p>Get ready to dive into the world of stunning memories! 🎉 Host your photos on a Raspberry Pi and enjoy them on the big screen, or anywhere your heart desires. 🖼️</p>
+    <p>Get ready to dive into the world of stunning memories! 🎉 Host your photos on a Raspberry Pi and enjoy them on the
+        big screen, or anywhere your heart desires. 🖼️</p>
 
     <ul>
-        <li>📤 <a href="web/uploader.html">Uploader</a> - Share your memories using the API</li>
-        <li>👀 <a href="web/viewer.html">Viewer</a> - Immerse yourself in the visual journey</li>
-        <li>🔌 <a href="api/README.md">API</a> - Learn how to connect and enhance your experience</li>
+        <li><a href="web/uploader.html">📤 Uploader</a> <span class="tag">soon</span> - Share your memories using the API
+        </li>
+        <li><a href="web/viewer.html">👀 Viewer</a> - Immerse yourself in the visual journey. Currently uses images from
+            <a href="https://unsplash.com/">Unsplash</a></li>
+        <li><a onclick="alert('Soon!')">🔌 API</a> <span class="tag">soon</span> - Learn how to connect and enhance your experience</li>
     </ul>
 </main>
 
 
-<div class="background" style="background-image: url('https://images.unsplash.com/photo-1691465451955-462470475a25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDExfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60');"></div>
+<div class="background"
+     style="background-image: url('https://images.unsplash.com/photo-1691465451955-462470475a25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDExfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60');"></div>
 
 
 </body>
