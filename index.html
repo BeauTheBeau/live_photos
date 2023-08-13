@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Photos</title>
+</head>
+
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        background-color: rgba(0, 0, 0, 1);
+        z-index: 1;
+    }
+
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        color: white;
+    }
+
+    a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #ccc;
+    }
+
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 125%;
+        height: 125%;
+        opacity: .5;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        filter: blur(10px);
+    }
+
+    .title {
+        font-size: 2em;
+        display: inline-block;
+        background: linear-gradient(135deg, #FFD700, #FF8C00);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+</style>
+
+<body>
+<main>
+    <h1>Welcome to<br><span class="title">Live Photos</span></h1>
+    <p>Get ready to dive into the world of stunning memories! 🎉 Host your photos on a Raspberry Pi and enjoy them on the big screen, or anywhere your heart desires. 🖼️</p>
+
+    <ul>
+        <li>📤 <a href="web/uploader.html">Uploader</a> - Share your memories using the API</li>
+        <li>👀 <a href="web/viewer.html">Viewer</a> - Immerse yourself in the visual journey</li>
+        <li>🔌 <a href="api/README.md">API</a> - Learn how to connect and enhance your experience</li>
+    </ul>
+</main>
+
+
+<div class="background" style="background-image: url('https://images.unsplash.com/photo-1691465451955-462470475a25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDExfGJvOGpRS1RhRTBZfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60');"></div>
+
+
+</body>
+</html>
