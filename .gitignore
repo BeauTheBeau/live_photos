@@ -963,7 +963,6 @@ tmtags
 *.dbs
 *.psm
 *.cmp
-*.html
 *.bsf
 
 # ignore simulation output of ModelSim
